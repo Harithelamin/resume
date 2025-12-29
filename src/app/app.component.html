@@ -26,16 +26,27 @@
         background: #f7f8fa;
       }
 
-      .avatar-xxl {
-        height: 10rem;      
-        width: 15rem;
+
+      .profile-avatar {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #038edc;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .profile-avatar img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: center;
-        display: block;
-        border-radius: 0;    
-        border: 3px solid #038edc;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); 
       }
+
 
       .card {
         margin-bottom: 20px;
@@ -224,11 +235,12 @@
               <div class="row align-items-center">
                 <div class="col-md-3">
                   <div class="text-center border-end">
-                    <img
-                      src="assets/img/harith_profile.png"
-                      class="img-fluid avatar-xxl rounded-circle"
-                      alt="Harith Elamin"
-                    />
+                    <div class="profile-avatar">
+                      <img
+                        src="assets/img/harith_profile.png"
+                        alt="Harith Elamin"
+                      />
+                    </div>
                     <h4 class="text-primary font-size-20 mt-3 mb-2">
                       Harith Elamin
                     </h4>
